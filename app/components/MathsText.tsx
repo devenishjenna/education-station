@@ -5,7 +5,7 @@ interface MathsTextProps {
   styling: string
 }
 
-export default function MathsText({ text, styling }: MathsTextProps) {
+export function MathsText({ text, styling }: MathsTextProps) {
   const segments = text.split('$')
   return (
     <div className={`${styling}`}>
@@ -18,3 +18,18 @@ export default function MathsText({ text, styling }: MathsTextProps) {
     </div>
   )
 }
+
+interface MathsTextFOProps {
+  x: number // coords of foreign object
+  y: number 
+  width: number // width of foreign object
+  height: number // height of foreign object
+  styling: string // className injection 
+  children: string
+}
+
+export function MathsTextFO({ x, y, width, height, styling, children }: MathsTextFOProps) {
+  return <foreignObject x={x} y={y} width={width} height={height}>
+    <MathsText text={children} styling={`${styling}`}/>
+  </foreignObject>
+} 

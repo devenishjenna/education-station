@@ -5,6 +5,7 @@ import Tabs from "../../components/Tabs"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import LessonWrapper from "@/app/components/LessonWrapper"
 import ExplorerWrapper from "@/app/components/ExplorerWrapper"
+import SummaryWrapper from "@/app/components/SummaryWrapper"
 import Quiz from "@/app/components/Quiz"
 
 interface TopicPageProps {
@@ -56,7 +57,7 @@ if (!activeTopic) notFound()
         </TabContent>
         
         <TabContent isActive={activeTab==='summary'}>
-          hello
+          <SummaryWrapper activeTopic={activeTopic} grade={grade} />
         </TabContent>
 
         <TabContent isActive={activeTab==='quiz'}>

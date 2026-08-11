@@ -2,7 +2,16 @@ import { InlineMath, BlockMath } from 'react-katex'
 
 interface MathsTextProps {
   text: string
-  styling: string
+  styling?: string
+}
+
+interface MathsTextFOProps {
+  x: number // coords of foreign object
+  y: number 
+  width: number // width of foreign object
+  height: number // height of foreign object
+  children: string
+  styling?: string // className injection
 }
 
 export function MathsText({ text, styling }: MathsTextProps) {
@@ -17,15 +26,6 @@ export function MathsText({ text, styling }: MathsTextProps) {
       })}
     </div>
   )
-}
-
-interface MathsTextFOProps {
-  x: number // coords of foreign object
-  y: number 
-  width: number // width of foreign object
-  height: number // height of foreign object
-  styling: string // className injection 
-  children: string
 }
 
 export function MathsTextFO({ x, y, width, height, styling, children }: MathsTextFOProps) {

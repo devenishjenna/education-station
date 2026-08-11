@@ -20,7 +20,7 @@ lesson, explorer, summary and quiz. Other topics show placeholders.
 - **Python / Manim** for the video generation - [animation-station](https://github.com/devenishjenna/animation-station)
 - Deployed on **Vercel**, with automatic deploys from `main`
 
-## How it works
+## Topic layout
 
 Every topic lives at `/[grade]/[topic]` and has four tabs:
 

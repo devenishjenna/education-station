@@ -4,6 +4,7 @@ import TabContent from "../../components/TabContent"
 import Tabs from "../../components/Tabs"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import LessonWrapper from "@/app/components/LessonWrapper"
+import ExplorerWrapper from "@/app/components/ExplorerWrapper"
 import Quiz from "@/app/components/Quiz"
 
 interface TopicPageProps {
@@ -47,11 +48,11 @@ if (!activeTopic) notFound()
           : 'rounded'}`}
           >
         <TabContent isActive={activeTab==='lesson'}>
-            <LessonWrapper activeTopic={activeTopic} />
+          <LessonWrapper activeTopic={activeTopic} />
         </TabContent>
 
         <TabContent isActive={activeTab==='explorer'}>
-          hello
+          <ExplorerWrapper activeTopic={activeTopic} grade={grade} />
         </TabContent>
         
         <TabContent isActive={activeTab==='summary'}>

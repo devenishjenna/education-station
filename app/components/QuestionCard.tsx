@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 import { Question } from "../data/quizData"
-import MathsText from './MathsText'
+import { MathsText } from './MathsText'
 
 interface QuestionCardProps {
   currentQuestion: Question

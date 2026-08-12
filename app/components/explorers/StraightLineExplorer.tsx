@@ -59,8 +59,8 @@ function formula(m: number, c: number): string {
 
 export default function StraightLineExplorer() {
 
-  const [m, setM] = useState(0)
-  const [c, setC] = useState(0)
+  const [m, setM] = useState(3)
+  const [c, setC] = useState(6)
 
   // The line is drawn out to the padded border rather than stopping at ±RANGE.
   const yAtLeft = m * -EDGE + c
@@ -74,7 +74,7 @@ export default function StraightLineExplorer() {
   return <div className="h-full flex">
 
     <svg
-      className="border-2 flex-2"
+      className="border-2 border-brand-blue rounded-xl flex-2"
       viewBox={`${-PAD} ${-PAD} ${SIZE + PAD * 2} ${SIZE + PAD * 2}`}
     >
       {/* ===== AXES — stop at ±RANGE, short of the border ===== */}
@@ -143,6 +143,14 @@ export default function StraightLineExplorer() {
     {/* Fixed-width rows so the formula and labels don't shift as values change */}
     <div className="flex-1">
       <div className="flex flex-col h-full justify-center gap-4 px-4">
+
+        {/* Hint callout, styled like the summary section blocks */}
+        <div className="rounded-lg border-l-4 border-brand-blue bg-brand-blue/10 px-4 py-3">
+          <MathsText
+            text="Adjust the values of $m$ and $c$ to see the effect on the straight line."
+            styling="text-sm text-slate-600"
+          />
+        </div>
 
         {/* nowrap + fixed height: the formula never reflows onto a second line,
             so nothing below it shifts as m and c change */}

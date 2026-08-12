@@ -30,3 +30,8 @@ Every topic lives at `/[grade]/[topic]` and has four tabs:
 | **Explorer** | An interactive SVG graph - drag sliders, watch the maths update, encouraging interactive learning |
 | **Summary** | The key rules |
 | **Quiz** | Multiple choice with explanations |
+
+**Lesson**
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)

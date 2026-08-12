@@ -19,7 +19,7 @@ function Section({ title, accent, children }: SectionProps) {
 
 export default function StraightLineSummary() {
   return (
-    <div className="flex flex-col gap-4 max-w-3xl">
+    <div className="flex flex-col gap-4 w-full">
 
       <Section title="The standard form" accent="border-brand-blue">
         <MathsText text="Every straight line can be written as $y = mx + c$." styling="text-base" />

@@ -31,7 +31,6 @@ Every topic lives at `/[grade]/[topic]` and has four tabs:
 | **Summary** | The key rules |
 | **Quiz** | Multiple choice with explanations |
 
-**Lesson**
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)

@@ -19,7 +19,7 @@ export default function Topbar({ activeGrade }: TopbarProps) {
             {activeGrade && <GradePill activeGrade={activeGrade}/>}
 
             {/* sign up or log in links */}
-            {/* <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 invisible">
                 <Link href="/login" className="text-sm text-text-muted hover:text-text-primary">
                 Log in
                 </Link>
@@ -27,7 +27,7 @@ export default function Topbar({ activeGrade }: TopbarProps) {
                 Sign up
                 </Link>
             </div> 
-            */}
+            
         </div>
     )
 }

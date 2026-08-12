@@ -19,15 +19,15 @@ export default function Topbar({ activeGrade }: TopbarProps) {
             {activeGrade && <GradePill activeGrade={activeGrade}/>}
 
             {/* sign up or log in links */}
-            <div className="flex items-center gap-3">
-                {/* TODO: Replace with user name/avatar once auth is added */}
+            <div className="flex items-center gap-3 invisible">
                 <Link href="/login" className="text-sm text-text-muted hover:text-text-primary">
                 Log in
                 </Link>
                 <Link href="/signup" className="text-sm px-3 py-1 bg-brand-blue text-white rounded-lg">
                 Sign up
                 </Link>
-            </div>
+            </div> 
+            
         </div>
     )
 }

@@ -83,7 +83,7 @@ export default async function GradePage({ params }: GradePageProps) {
                   <div
                     key={topic.id}
                     className="flex flex-col gap-2 rounded-xl border border-white/5 border-l-4 border-l-white/10
-                      bg-navy-mid/40 p-4 text-text-primary/60 opacity-80"
+                      bg-navy-mid/40 p-4 text-text-primary/60 opacity-90"
                   >
                     {cardContent}
                   </div>

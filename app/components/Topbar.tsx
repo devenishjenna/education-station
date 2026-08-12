@@ -12,7 +12,7 @@ export default function Topbar({ activeGrade }: TopbarProps) {
             
             {/* logo with link to home */}
             <Link href="/" className="text-lg font-bold text-text-primary">
-                <span className="text-brand-blue">Education</span>Station
+                <span className="text-brand-blue">Edu</span>Stat
             </Link>
             
             {/* grade pill - only mount if there is an active grade*/}

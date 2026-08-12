@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EducationStation",
+  title: "EduStat",
   description: "Interactive CAPS-aligned mathematics lessons for South African students.",
 };
 

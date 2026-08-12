@@ -1,6 +1,6 @@
 # Education Station
 
-My first web development project 🤓 
+My first web development project <span style="font-size: 1.3em;">🤓</span> 
 
 Interactive maths lessons for the South African CAPS curriculum, grades 10–12.
 

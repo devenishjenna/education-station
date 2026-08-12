@@ -14,7 +14,7 @@ export default async function LessonLayout({ children, params}: LessonLayoutProp
   return <div className="relative min-h-screen">
     <div className="relative z-10">
       <Topbar activeGrade={activeGrade} />
-      <div className="flex">
+      <div className="flex max-w-[1600px] mx-auto">
         <Sidebar activeGrade={activeGrade}/>
         <div className="flex-1">{children}</div>
       </div>

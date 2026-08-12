@@ -87,7 +87,7 @@ export const grade10Topics: Topic[] = [
     hasVideo: false,
     hasExplorer: false,
     quizCount: 1,
-    description: 'Understand what a function is, how to read function notation and identify domain and range.',
+    description: 'Understand what a function is and how identify domain and range.',
   },
   {
     id: 6,

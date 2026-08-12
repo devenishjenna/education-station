@@ -1,16 +1,12 @@
 # Education Station
 
+My first web development project <span style="font-size: 1.3em;">🤓</span> 
+
 Interactive maths lessons for the South African CAPS curriculum, grades 10–12.
 
 **Live:** https://education-station.vercel.app/
 
-My first web development project - built to learn the modern React and TypeScript
-stack end to end, from routing and state through to deployment.
-
-Work in progress... **Grade 10 → Straight line graphs** is the topic with the most content -
-lesson, explorer, summary and quiz. Other topics show placeholders.
-**Straight line graphs:** https://education-station.vercel.app/grade-10/straight-line-graphs
-
+Work in progress: **Grade 10 → Straight line graphs** is the topic with the most content (https://education-station.vercel.app/grade-10/straight-line-graphs)
 
 ## Stack
 
@@ -30,3 +26,7 @@ Every topic lives at `/[grade]/[topic]` and has four tabs:
 | **Explorer** | An interactive SVG graph - drag sliders, watch the maths update, encouraging interactive learning |
 | **Summary** | The key rules |
 | **Quiz** | Multiple choice with explanations |
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
